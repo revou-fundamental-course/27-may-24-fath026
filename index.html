@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fath Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Bagian  -->
+  <Nav class="menu-navigasi">
+    <div class="logo-icon">
+    </div>
+    <section>
+      <a href="#beranda" class="nav-item">Beranda</a>
+      <a href="#about-me" class="nav-item">Tentang Saya</a>
+      <a href="#service" class="nav-item">Layanan</a>
+      <a href="#message-us" class="nav-item">Hubungi Saya</a>
+    </section>
+  </Nav>
+  <!-- Bagian Beranda -->
+  <section id="beranda" class="parallax">
+    <div class="beranda">
+      <div class="beranda-title">
+        <p style="font-size: 15pt;">Welcome</p>
+        <h1>i'm Fatkhurrochman</h1>
+        <p style="font-size: 15pt;">And I'm a Beginner for Web Desain</p>
+      </div>
+    </div>
+  </section>
+  <!-- Bagian about-me -->
+  <section id="about-me" class="section-konten">
+    <article class="konten-list">
+      <div class="left-tentang">
+        <div>
+          <img src="img/bg-img.jpg" class="img-tentang" alt="foto">
+        </div>
+        <div>
+          <p><span>Nama: </span> <span>fatkhurrochman</span></p>
+          <p><span>Profil: </span> <span>Beginner web developer</span></p>
+          <p><span>Email: </span> <span>fatkhurrochman212@gmail.com</span></p>
+          <p><span>Telp: </span> <span>+628568806257</span></p>
+        </div>
+      </div>
+      <div class="right-tentang">
+        <div>
+          <center>
+            <h2>Tentang saya</h2>
+            <hr>
+          </center>
+          <p>
+            Saya merupakan seoerang pemula dalam software enginering. Saya bergabung dalam kelas softeware Enginer
+            Fundamental Course (SEFC) pada Revou.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptate deserunt quis expedita nesciunt
+            tempora, obcaecati quos vitae eum a veniam, consequuntur, quia suscipit tempore? Aut vel totam beatae
+            quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quisquam veniam tenetur
+            dicta rem officia quaerat excepturi quibusdam maxime beatae libero sint, officiis minus facere vitae
+            voluptates aspernatur accusantium nam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia voluptate deserunt quis expedita nesciunt
+            tempora, obcaecati quos vitae eum a veniam, consequuntur, quia suscipit tempore? Aut vel totam beatae
+            quisquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae quisquam veniam tenetur
+            dicta rem officia quaerat excepturi quibusdam maxime beatae libero sint, officiis minus facere vitae
+            voluptates aspernatur accusantium nam?
+          </p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!-- Bagian service -->
+  <section id="service" class="bg-service">
+    <header class="service-list">
+      <h1>LAYANAN</h1>
+    </header>
+    <article class="service-list">
+      <div>
+        <div>
+          <img src="img/html.jpeg" alt="" class="img-service">
+        </div>
+        <h3>HTML</h3>
+      </div>
+      <div>
+        <div>
+          <img src="img/css.png" alt="" class="img-service">
+        </div>
+        <h3>CSS</h3>
+      </div>
+      <div>
+        <div>
+          <img src="img/js.png" alt="" class="img-service">
+        </div>
+        <h3>Javascript</h3>
+      </div>
+    </article>
+  </section>
+  <!-- Bagian message-us -->
+  <section id="message-us" class="section-content">
+    <header>
+      <h1>KONTAK SAYA</h1>
+    </header>
+    <section class="message-us-section">
+      <section class="form">
+        <form name="message-form" onsubmit="return validateFormIndex()">
+          <div class="row">
+            <div class="col-25">
+              <label for="">Nama</label>
+            </div>
+            <div class="col-75">
+              <input type="text" name="name-input" id="name-input" placeholder="Masukan Nama Anda !">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lahir">Tanggal Lahir</label>
+            </div>
+            <div class="col-75">
+              <input type="date" name="lahir-input" id="lahir-input">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="gender">jenis Kelamin: </label>
+            </div>
+            <div class="col-75">
+              <select id="gender-input" name="gender">
+                <option name="gender-input" id="laki-laki" value="laki-laki">laki-laki</option>
+                <option name="gender-input" id="perempuan" value="perempuan">perempuan</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="pesan">Pesan</label>
+            </div>
+            <div class="col-75">
+              <textarea cols="30" rows="10" name="pesan-input" id="pesan-input"
+                placeholder="Masukan Pesan Anda!"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25"></div>
+            <div class="col-75">
+              <button id="submit" type="submit">Kirim</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="form-result">
+          <p>Nama : <span id="name"></span> </p>
+          <p>Tanggal Lahir : <span id="lahir"></span> </p>
+          <p>Jenis Kelamin : <span id="gender"></span> </p>
+          <p>Pesan : <span id="pesan"></span> </p>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  </section>
+  <!-- Bagian footer -->
+  <footer>
+    <div>
+      <p class="copyright">&copy; Copyright <strong>Fatkhurrochman</strong>. All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
